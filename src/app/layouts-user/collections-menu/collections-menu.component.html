@@ -1,0 +1,26 @@
+<div class="margin">
+    <div class="row col-12">
+        <div class="col-1"></div>
+        <div class="col-3">
+            <div *ngFor="let category of category" (click)="clickProduct(category._id)">
+                <ul>
+                    <li>
+                        <a style="cursor: pointer;">
+                            {{category.name}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row col-8" style="border-left: 3px solid red;">
+            <div class="col-4" *ngFor="let pro of Products" >
+                <div *ngFor="let image of pro.image">
+                    <img [src]="image.url" height="500" width="700" />
+                </div>
+                <p><b>{{pro.name}}</b></p>
+                <p><b>{{pro.price}} đ</b></p>
+                <p><button class="btn btn-default" id="btnmuangay">MUA NGAY</button>
+            </div>
+        </div>
+    </div>
+</div>

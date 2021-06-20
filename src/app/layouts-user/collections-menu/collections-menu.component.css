@@ -1,0 +1,32 @@
+img{
+    border-radius: 10px;
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+#btnmuangay{
+    background-color: darkred;
+    color: white;
+}
+#btnmuangay:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+
+.margin{
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+a{
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'BebasNeue','Lato', "Times New Roman", serif;
+    padding-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+    padding-bottom: 20px;
+}
